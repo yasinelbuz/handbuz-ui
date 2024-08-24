@@ -1,6 +1,6 @@
 {
   "name": "handbuz-ui",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "React components library focused on usability, accessibility and developer experience",
   "main": "index.ts",
   "repository": {
