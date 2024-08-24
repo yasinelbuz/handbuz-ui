@@ -1,0 +1,21 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.input {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.label {
+  font-size: 16px;
+  color: #333;
+}
+
+.disabled {
+  cursor: not-allowed;
+  color: #a0a0a0;
+}
