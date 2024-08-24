@@ -1,15 +1,31 @@
 {
-  "name": "packages",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "handbuz-ui",
+  "version": "0.0.4",
+  "description": "React components library focused on usability, accessibility and developer experience",
+  "main": "index.ts",
+  "repository": {
+    "url": "https://github.com/yasinelbuz/handbuz-ui/",
+    "type": "git",
+    "directory": "packages/@handbuz"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "components",
+    "design",
+    "frontend",
+    "library",
+    "next",
+    "nextjs",
+    "react",
+    "ui",
+    "ui-kit"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "clsx": "^2.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }
