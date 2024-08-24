@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# handbuz ui
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My UI Library, projelerinizde kullanabileceğiniz basit ve özelleştirilebilir kullanıcı arayüzü bileşenleri sunar. Bu kütüphane, modern web uygulamaları geliştirmeyi kolaylaştırmak için tasarlanmıştır.
 
-Currently, two official plugins are available:
+## Bileşenler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Button**: Farklı durum ve eylemleri temsil eden düğme bileşeni.
+- **Input**: Kullanıcı girdilerini alabileceğiniz metin girişi bileşeni.
+- **Checkbox**: Birden fazla seçeneğin seçimini sağlayan onay kutusu bileşeni.
 
-## Expanding the ESLint configuration
+## Kurulum
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Projeye dahil etmek için:
 
-- Configure the top-level `parserOptions` property like this:
+```bash
+npm install handbuz-ui
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+veya
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+yarn add handbuz-ui
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Kullanım
+Aşağıda kütüphanedeki bileşenlerin nasıl kullanılacağına dair basit bir örnek yer almaktadır:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+import { Button, Input, Checkbox } from 'handbuz-ui';
+
+
+function App() {
+  return (
+    <div>
+      <Button onClick={() => alert('Button Clicked!')}>Click Me</Button>
+      <Input placeholder="Enter text here" />
+      <Checkbox label="I agree" />
+    </div>
+  );
+}
+
+Katkıda Bulunma
+Katkılarınızı bekliyoruz! Herhangi bir hata bildirimi ya da geliştirme önerisi için lütfen bir issue açın veya doğrudan bir pull request gönderin.
