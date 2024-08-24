@@ -8,7 +8,7 @@ export default function App() {
       npm i handbuz-ui veya yarn add handbuz-ui komutunu çalıştırarak
       indirebilirsiniz.
       <br />
-      sevgiler.
+      sevgiler..
       <br />
     </div>
   );
